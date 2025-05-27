@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Connection, PublicKey, clusterApiUrl } from "@solana/web3.js";
 import { Program, AnchorProvider, web3 } from "@coral-xyz/anchor";
 
-import idl from "../idl.json";
+import idl from "../../../target/idl/hello_anchor.json";
 import kp from "../../../keypair.json"
 
 const programID = new PublicKey(idl.metadata.address);
